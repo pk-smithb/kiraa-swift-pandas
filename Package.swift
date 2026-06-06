@@ -66,7 +66,6 @@ let sourceTargets: [Target] = [
         publicHeadersPath: "include",
         cSettings: [
             .headerSearchPath("include"),
-            .unsafeFlags(["-O3"]),
         ]
     ),
     .target(
@@ -75,7 +74,6 @@ let sourceTargets: [Target] = [
         publicHeadersPath: "include",
         cSettings: [
             .headerSearchPath("include"),
-            .unsafeFlags(["-O3"]),
         ]
     ),
     .target(
@@ -84,7 +82,6 @@ let sourceTargets: [Target] = [
         publicHeadersPath: "include",
         cSettings: [
             .headerSearchPath("include"),
-            .unsafeFlags(["-O3"]),
         ]
     ),
     .target(
@@ -94,7 +91,6 @@ let sourceTargets: [Target] = [
         exclude: ["Metal/Shaders/GroupByShaders.metal", "Metal/Shaders/MergeShaders.metal"],
         swiftSettings: [
             .define("ACCELERATE_AVAILABLE", .when(platforms: [.macOS, .iOS])),
-            .unsafeFlags(["-O"]),
         ]
     ),
     .testTarget(
